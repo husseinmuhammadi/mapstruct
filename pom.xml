@@ -11,6 +11,7 @@
 
     <modules>
         <module>mapstruct</module>
+        <module>object-factories</module>
     </modules>
 
     <properties>
