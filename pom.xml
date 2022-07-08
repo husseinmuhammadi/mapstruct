@@ -11,7 +11,9 @@
 
     <modules>
         <module>mapstruct</module>
+        <module>data-type-conversions</module>
         <module>object-factories</module>
+        <module>customizing-mappings</module>
     </modules>
 
     <properties>

@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>mapstruct</artifactId>
+    <name>0. Mapstruct</name>
 
     <properties>
         <main-class>com.javastudio.tutorial.mapping.Application</main-class>
