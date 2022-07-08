@@ -1,10 +1,7 @@
 package com.javastudio.tutorial.mapping.hooks.mapper;
 
 import com.javastudio.tutorial.mapping.hooks.model.*;
-import org.mapstruct.AfterMapping;
-import org.mapstruct.BeforeMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.MappingTarget;
+import org.mapstruct.*;
 
 @Mapper
 public abstract class VehicleMapper {
@@ -19,8 +16,12 @@ public abstract class VehicleMapper {
     @AfterMapping
     protected void fillTank(AbstractVehicle vehicle, @MappingTarget AbstractVehicleDto result) {
         System.out.print("After mapping --> ");
-        result.fuelUp( new Fuel( vehicle.getTankCapacity(), vehicle.getFuelType() ) );
+        result.fuelUp(new Fuel(vehicle.getTankCapacity(), vehicle.getFuelType()));
     }
 
     public abstract CarDto map(Car car);
+
+    public abstract CarDto map(Car car, String description);
+
+    public abstract CarDto map(Car car, @Context Object context);
 }

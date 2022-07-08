@@ -25,7 +25,7 @@ class VehicleMapperTest {
         car.setFuelType("Diesel");
         car.setTankCapacity(100);
 
-        CarDto dto = mapper.map(car);
+        CarDto dto = mapper.map(car, "anonymous");
 
     }
 

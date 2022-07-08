@@ -8,6 +8,10 @@ public class CarDto extends AbstractVehicleDto {
     String fuelType;
     Integer tankCapacity;
 
+    String description;
+
+    Object context;
+
     @Override
     public void fuelUp(Fuel fuel) {
         System.out.println("fueling up");
