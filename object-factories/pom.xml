@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.javastudio.tutorial.mapping</groupId>
         <artifactId>mapping-parent</artifactId>
+        <groupId>com.javastudio.tutorial.mapping</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mapstruct</artifactId>
-    <name>0. Mapstruct</name>
+    <artifactId>object-factories</artifactId>
+    <name>9. Object Factories</name>
 
     <properties>
         <main-class>com.javastudio.tutorial.mapping.Application</main-class>
@@ -30,6 +30,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>

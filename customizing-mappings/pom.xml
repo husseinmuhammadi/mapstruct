@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.javastudio.tutorial.mapping</groupId>
         <artifactId>mapping-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mapstruct</artifactId>
-    <name>0. Mapstruct</name>
+    <artifactId>customizing-mappings</artifactId>
+    <name>12. Customizing Mappings</name>
 
     <properties>
-        <main-class>com.javastudio.tutorial.mapping.Application</main-class>
+        <main-class>com.javastudio.tutorial.mapping.CustomizingMappingsApplication</main-class>
     </properties>
 
     <build>
@@ -30,6 +29,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
