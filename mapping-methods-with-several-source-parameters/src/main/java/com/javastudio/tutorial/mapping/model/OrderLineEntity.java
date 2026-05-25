@@ -10,5 +10,6 @@ public class OrderLineEntity {
     Long orderId;
     ProductEntity product;
     Integer quantity;
+    Double packageWeight;
 }
 

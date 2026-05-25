@@ -9,4 +9,5 @@ public class OrderLine {
     Long id;
     Product product;
     Integer quantity;
+    Double weight;
 }

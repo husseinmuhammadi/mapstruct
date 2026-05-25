@@ -5,10 +5,15 @@ import com.javastudio.tutorial.mapping.model.OrderLineEntity;
 import com.javastudio.tutorial.mapping.model.Product;
 import com.javastudio.tutorial.mapping.model.ProductEntity;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper
 public interface OrderLineMapper {
 
-    OrderLineEntity map(OrderLine orderLine);
+    @Mapping(target = "orderId", source = "orderId")
+    @Mapping(target = "packageWeight", source = "orderLine.weight")
+    OrderLineEntity map(OrderLine orderLine, Long orderId);
+
+    @Mapping(target = "productPrice", source = "price")
     ProductEntity map(Product product);
 }

@@ -8,4 +8,5 @@ import lombok.Setter;
 public class ProductEntity {
     Long id;
     String productName;
+    Double productPrice;
 }

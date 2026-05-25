@@ -8,4 +8,5 @@ import lombok.Setter;
 public class Product {
     Long id;
     String productName;
+    Double price;
 }
