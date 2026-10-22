@@ -17,6 +17,7 @@
         <module>date-mapping</module>
         <module>mapping-methods-with-several-source-parameters</module>
         <module>bidirectional-mapping-avoid-cycling</module>
+        <module>bidirectional-mapping-avoid-cycling-kotlin</module>
     </modules>
 
     <properties>
