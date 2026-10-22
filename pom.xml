@@ -16,6 +16,7 @@
         <module>customizing-mappings</module>
         <module>date-mapping</module>
         <module>mapping-methods-with-several-source-parameters</module>
+        <module>bidirectional-mapping-avoid-cycling</module>
     </modules>
 
     <properties>
